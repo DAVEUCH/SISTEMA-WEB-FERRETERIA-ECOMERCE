@@ -1,0 +1,121 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>D:\CONTAPERU\INDUSTRIALES\Ejecutable ContaNet ERP 3.0.3.92 -\Ejecutable v3\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>es-PE</Localization>
+///   <Version>19.1</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.Report1">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class Report1 : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.PageHeaderBand Cabecera;
+        private DevExpress.XtraReports.UI.PageFooterBand Pie;
+        private DevExpress.XtraReports.UI.DetailBand Detalle;
+        private DevExpress.XtraReports.UI.DetailReportBand DetailReport;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public Report1() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.Report1");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.Cabecera = new DevExpress.XtraReports.UI.PageHeaderBand();
+            this.Pie = new DevExpress.XtraReports.UI.PageFooterBand();
+            this.Detalle = new DevExpress.XtraReports.UI.DetailBand();
+            this.DetailReport = new DevExpress.XtraReports.UI.DetailReportBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // Cabecera
+            // 
+            this.Cabecera.Dpi = 254F;
+            this.Cabecera.HeightF = 254F;
+            this.Cabecera.Name = "Cabecera";
+            // 
+            // Pie
+            // 
+            this.Pie.Dpi = 254F;
+            this.Pie.HeightF = 254F;
+            this.Pie.Name = "Pie";
+            // 
+            // Detalle
+            // 
+            this.Detalle.Dpi = 254F;
+            this.Detalle.HeightF = 0F;
+            this.Detalle.HierarchyPrintOptions.Indent = 50.8F;
+            this.Detalle.Name = "Detalle";
+            // 
+            // DetailReport
+            // 
+            this.DetailReport.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Detail});
+            this.DetailReport.DataMember = "OrdenPedido.OrdenPedido_DetalleOrdenPedido";
+            this.DetailReport.Dpi = 254F;
+            this.DetailReport.Level = 0;
+            this.DetailReport.Name = "DetailReport";
+            // 
+            // Detail
+            // 
+            this.Detail.Dpi = 254F;
+            this.Detail.HeightF = 88.9F;
+            this.Detail.HierarchyPrintOptions.Indent = 50.8F;
+            this.Detail.Name = "Detail";
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.Dpi = 254F;
+            this.TopMargin.HeightF = 40F;
+            this.TopMargin.Name = "TopMargin";
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.HeightF = 40F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // Report1
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.Cabecera,
+                        this.Pie,
+                        this.Detalle,
+                        this.DetailReport,
+                        this.TopMargin,
+                        this.BottomMargin});
+            this.DataMember = "OrdenPedido";
+            this.DisplayName = "xr20517934632OP.repx";
+            this.Dpi = 254F;
+            this.Extensions.Add("DataSerializationExtension", "Custom");
+            this.Extensions.Add("DataEditorExtension", "Custom");
+            this.Extensions.Add("ParameterEditorExtension", "Custom");
+            this.Font = new System.Drawing.Font("Arial", 9F);
+            this.Margins = new System.Drawing.Printing.Margins(40, 40, 40, 40);
+            this.Name = "Report1";
+            this.PageHeight = 2970;
+            this.PageWidth = 2100;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.SnapGridSize = 25F;
+            this.StyleSheetPath = "";
+            this.Version = "19.1";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
